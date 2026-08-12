@@ -1,73 +1,109 @@
-.parametro-senha {
-    margin-top: 20px;
-    margin-bottom: 24px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-/* Título da seção de características */
-.parametro-senha__titulo {
-    font-size: 0.95rem;
-    color: #94a3b8;
-    margin-bottom: 8px;
-    font-weight: 600;
+.conteudo {
+    width: 100%;
+    max-width: 400px;
 }
 
-/* Item de checkbox individual */
-.parametro-senha-checkbox {
+.container {
+    background-color: #1e293b;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f1f5f9;
+    margin-bottom: 24px;
+}
+
+/* Caixa de Exibição da Senha */
+.display-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    margin-bottom: 24px;
+}
+
+#password {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #38bdf8;
+    word-break: break-all;
+}
+
+/* Botão com Ícone/Imagem */
+.copy-btn {
+    background-color: #334155;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-    background-color: #0f172a;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1px solid #334155;
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    justify-content: center;
+    transition: background-color 0.2s ease;
 }
 
-.parametro-senha-checkbox:hover {
-    background-color: #1a2638;
-    border-color: #475569;
+.copy-btn:hover {
+    background-color: #475569;
 }
 
-/* Customização dos inputs de Checkbox */
-.parametro-senha-checkbox input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #0284c7; /* Cor do check marcada */
-    cursor: pointer;
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* Ajusta a imagem para cor branca caso seja um ícone escuro */
 }
 
-/* Rótulos dos checkboxes */
-.parametro-senha-checkbox label {
-    font-size: 0.9rem;
-    color: #f8fafc;
-    cursor: pointer;
-    user-select: none;
-}
+/* Seção Parâmetros */
 .parametro {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 24px;
 }
 
-/* Título principal da personalização */
 .parametro-titulo {
     font-size: 1.1rem;
     color: #f1f5f9;
     font-weight: 600;
 }
 
-/* Coluna/Seção do tamanho da senha */
-.parametro-coluna__senha {
+.parametro-senha {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
-/* Container que envolve os botões - e + com o número */
+.parametro-senha__titulo {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
 .parametro-senha-botoes {
     display: flex;
     align-items: center;
@@ -79,7 +115,6 @@
     border: 1px solid #334155;
 }
 
-/* Estilo dos botões de incremento e decremento */
 .parametro-senha__botao {
     background-color: #334155;
     color: #f8fafc;
@@ -101,11 +136,56 @@
     transform: scale(0.95);
 }
 
-/* Texto indicando o número de caracteres (ex: 12) */
 .parametro-senha__texto {
     font-size: 1.2rem;
     font-weight: bold;
     min-width: 28px;
     text-align: center;
     color: #38bdf8;
+}
+
+/* Checkboxes */
+.parametro-senha-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0f172a;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.parametro-senha-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0284c7;
+    cursor: pointer;
+}
+
+.parametro-senha-checkbox label {
+    font-size: 0.9rem;
+    color: #f8fafc;
+    cursor: pointer;
+}
+
+/* Botão Gerar */
+.generate-btn {
+    width: 100%;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.generate-btn:hover {
+    background-color: #0369a1;
+}
+
+.generate-btn:active {
+    transform: scale(0.98);
 }

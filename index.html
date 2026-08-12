@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gerenciador de senha</title>
+    <title>Gerenciador de Senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section class="conteudo">
         <div class="container">
              <div class="header">
-                    <h1> gerador de senhas</h1>
-                 </div>
+                    <h1>Gerador de Senhas</h1>
+             </div>
+             
              <div class="display-box">
                 <span id="password">Senha</span>
-                <button class="copy-btn" id="copyBtn" title="copiar">copiar</button>
+                <button class="copy-btn" id="copyBtn" title="copiar">
+                    <img src="copy-icon.png" alt="Copiar" class="btn-icon">
+                </button>
+             </div>
+
+             <div class="parametro">
+                <h3 class="parametro-titulo">Personalize sua senha</h3>
+                
+                <div class="parametro-coluna__senha">
+                    <div class="parametro-senha">
+                        <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                        
+                        <div class="parametro-senha-botoes">
+                            <button class="parametro-senha__botao" id="decrement">-</button>
+                            <p class="parametro-senha__texto" id="lengthVal">12</p>
+                            <button class="parametro-senha__botao" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" id="maiusculo" type="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" id="minusculo" type="checkbox" checked>
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" id="numero" type="checkbox" checked>
+                        <label for="numero">Números</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" id="simbolo" type="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+             </div>
+
+             <button class="generate-btn" id="generateBtn">Gerar nova senha</button>
         </div>
-        <div class="custon-section">
-            <h2>personalize sua senha</h2>
-            <div class="control-group">
-                <span class="control-label">número de caracteres</span>
-            </div>
-        <div class="couter">
-            <button id="decrement">-</button>
-            <span id="lengthVal">12</span>
-            <button id="increment">+</button>
-        </div>
-        </div>
-        <button class="generate-btn" id="generateBtn">Gerar nova senha </button>
-        </div>
-    </div>
-    
-  </section>  
+  </section>
+  
+  <script src="script.js"></script>
 </body>
 </html>
