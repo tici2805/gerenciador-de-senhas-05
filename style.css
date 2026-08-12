@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #0f172a; /* Fundo escuro elegante */
+    background-color: #0f172a;
     color: #f8fafc;
     display: flex;
     justify-content: center;
@@ -15,14 +15,14 @@ body {
     padding: 20px;
 }
 
-/* Container Principal */
+/* Estrutura Principal */
 .conteudo {
     width: 100%;
     max-width: 400px;
 }
 
 .container {
-    background-color: #1e293b; /* Card levemente mais claro */
+    background-color: #1e293b;
     padding: 28px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -38,7 +38,7 @@ body {
     margin-bottom: 24px;
 }
 
-/* Campo de Exibição da Senha */
+/* Exibição da Senha */
 .display-box {
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #38bdf8; /* Azul neon para destacar a senha */
+    color: #38bdf8;
     word-break: break-all;
     margin-right: 10px;
 }
@@ -75,8 +75,9 @@ body {
     background-color: #475569;
 }
 
-/* Seção de Personalização */
-.custom-section h2 {
+/* Seção de Personalização (Mapeia as duas variações de escrita das classes) */
+.custom-section h2,
+.custon-section h2 {
     font-size: 0.95rem;
     color: #94a3b8;
     text-transform: capitalize;
@@ -93,8 +94,9 @@ body {
     text-transform: capitalize;
 }
 
-/* Contador de Caracteres */
-.counter {
+/* Contador de Caracteres (Mapeia 'counter' e 'couter') */
+.counter,
+.couter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +108,8 @@ body {
     margin-bottom: 24px;
 }
 
-.counter button {
+.counter button,
+.couter button {
     background-color: #334155;
     color: #f8fafc;
     border: none;
@@ -119,11 +122,13 @@ body {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.counter button:hover {
+.counter button:hover,
+.couter button:hover {
     background-color: #475569;
 }
 
-.counter button:active {
+.counter button:active,
+.couter button:active {
     transform: scale(0.95);
 }
 
@@ -135,7 +140,7 @@ body {
     color: #38bdf8;
 }
 
-/* Botão de Gerar Senha */
+/* Botão Principal */
 .generate-btn {
     width: 100%;
     background-color: #0284c7;
