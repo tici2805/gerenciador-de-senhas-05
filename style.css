@@ -1,163 +1,49 @@
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #0f172a;
-    color: #f8fafc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-/* Estrutura Principal */
-.conteudo {
-    width: 100%;
-    max-width: 400px;
-}
-
-.container {
-    background-color: #1e293b;
-    padding: 28px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid #334155;
-}
-
-/* Cabeçalho */
-.header h1 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    text-align: center;
-    color: #f1f5f9;
+.parametro-senha {
+    margin-top: 20px;
     margin-bottom: 24px;
-}
-
-/* Exibição da Senha */
-.display-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0f172a;
-    padding: 14px 18px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 12px;
 }
 
-#password {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #38bdf8;
-    word-break: break-all;
-    margin-right: 10px;
-}
-
-.copy-btn {
-    background-color: #334155;
-    color: #f8fafc;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    text-transform: capitalize;
-    transition: background-color 0.2s ease;
-}
-
-.copy-btn:hover {
-    background-color: #475569;
-}
-
-/* Seção de Personalização (Mapeia as duas variações de escrita das classes) */
-.custom-section h2,
-.custon-section h2 {
+/* Título da seção de características */
+.parametro-senha__titulo {
     font-size: 0.95rem;
     color: #94a3b8;
-    text-transform: capitalize;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-weight: 600;
 }
 
-.control-group {
-    margin-bottom: 12px;
-}
-
-.control-label {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    text-transform: capitalize;
-}
-
-/* Contador de Caracteres (Mapeia 'counter' e 'couter') */
-.counter,
-.couter {
+/* Item de checkbox individual */
+.parametro-senha-checkbox {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 16px;
+    gap: 10px;
     background-color: #0f172a;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    margin-bottom: 24px;
-}
-
-.counter button,
-.couter button {
-    background-color: #334155;
-    color: #f8fafc;
-    border: none;
-    width: 36px;
-    height: 36px;
+    padding: 10px 14px;
     border-radius: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    border: 1px solid #334155;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.counter button:hover,
-.couter button:hover {
-    background-color: #475569;
+.parametro-senha-checkbox:hover {
+    background-color: #1a2638;
+    border-color: #475569;
 }
 
-.counter button:active,
-.couter button:active {
-    transform: scale(0.95);
-}
-
-#lengthVal {
-    font-size: 1.2rem;
-    font-weight: bold;
-    min-width: 28px;
-    text-align: center;
-    color: #38bdf8;
-}
-
-/* Botão Principal */
-.generate-btn {
-    width: 100%;
-    background-color: #0284c7;
-    color: #ffffff;
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+/* Customização dos inputs de Checkbox */
+.parametro-senha-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0284c7; /* Cor do check marcada */
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.generate-btn:hover {
-    background-color: #0369a1;
-}
-
-.generate-btn:active {
-    transform: scale(0.98);
+/* Rótulos dos checkboxes */
+.parametro-senha-checkbox label {
+    font-size: 0.9rem;
+    color: #f8fafc;
+    cursor: pointer;
+    user-select: none;
 }
