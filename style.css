@@ -47,3 +47,65 @@
     cursor: pointer;
     user-select: none;
 }
+.parametro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Título principal da personalização */
+.parametro-titulo {
+    font-size: 1.1rem;
+    color: #f1f5f9;
+    font-weight: 600;
+}
+
+/* Coluna/Seção do tamanho da senha */
+.parametro-coluna__senha {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Container que envolve os botões - e + com o número */
+.parametro-senha-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: #0f172a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+/* Estilo dos botões de incremento e decremento */
+.parametro-senha__botao {
+    background-color: #334155;
+    color: #f8fafc;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.parametro-senha__botao:hover {
+    background-color: #475569;
+}
+
+.parametro-senha__botao:active {
+    transform: scale(0.95);
+}
+
+/* Texto indicando o número de caracteres (ex: 12) */
+.parametro-senha__texto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 28px;
+    text-align: center;
+    color: #38bdf8;
+}
