@@ -1,109 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+Aqui está o arquivo `style.css` enxuto, estilizando **apenas e exclusivamente** as classes exatas mostradas nas duas imagens enviadas (`parametro`, `parametro-titulo`, `parametro-coluna__senha`, `parametro-senha`, `parametro-senha__titulo`, `parametro-senha-botoes`, `parametro-senha__botao`, `parametro-senha__texto` e `parametro-senha-checkbox`):
 
-body {
-    background-color: #0f172a;
-    color: #f8fafc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.conteudo {
-    width: 100%;
-    max-width: 400px;
-}
-
-.container {
-    background-color: #1e293b;
-    padding: 28px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    border: 1px solid #334155;
-}
-
-.header h1 {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #f1f5f9;
-    margin-bottom: 24px;
-}
-
-/* Caixa de Exibição da Senha */
-.display-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0f172a;
-    padding: 14px 18px;
-    border-radius: 10px;
-    border: 1px solid #334155;
-    margin-bottom: 24px;
-}
-
-#password {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #38bdf8;
-    word-break: break-all;
-}
-
-/* Botão com Ícone/Imagem */
-.copy-btn {
-    background-color: #334155;
-    border: none;
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease;
-}
-
-.copy-btn:hover {
-    background-color: #475569;
-}
-
-.btn-icon {
-    width: 20px;
-    height: 20px;
-    filter: invert(1); /* Ajusta a imagem para cor branca caso seja um ícone escuro */
-}
-
-/* Seção Parâmetros */
+```css
+/* Container principal dos parâmetros */
 .parametro {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 24px;
 }
 
+/* Título principal: Personalize sua senha */
 .parametro-titulo {
     font-size: 1.1rem;
     color: #f1f5f9;
     font-weight: 600;
 }
 
+.parametro-coluna__senha {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Bloco de cada grupo de parâmetros */
 .parametro-senha {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+/* Subtítulos (Número de caracteres, Características da senha) */
 .parametro-senha__titulo {
     font-size: 0.9rem;
     color: #94a3b8;
     font-weight: 500;
 }
 
+/* Área dos botões - e + com o número */
 .parametro-senha-botoes {
     display: flex;
     align-items: center;
@@ -115,6 +47,7 @@ body {
     border: 1px solid #334155;
 }
 
+/* Botões - e + */
 .parametro-senha__botao {
     background-color: #334155;
     color: #f8fafc;
@@ -125,17 +58,14 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease;
 }
 
 .parametro-senha__botao:hover {
     background-color: #475569;
 }
 
-.parametro-senha__botao:active {
-    transform: scale(0.95);
-}
-
+/* Texto com a quantidade de caracteres (ex: 12) */
 .parametro-senha__texto {
     font-size: 1.2rem;
     font-weight: bold;
@@ -144,7 +74,7 @@ body {
     color: #38bdf8;
 }
 
-/* Checkboxes */
+/* Caixas de seleção (Checkboxes) */
 .parametro-senha-checkbox {
     display: flex;
     align-items: center;
@@ -168,24 +98,4 @@ body {
     cursor: pointer;
 }
 
-/* Botão Gerar */
-.generate-btn {
-    width: 100%;
-    background-color: #0284c7;
-    color: #ffffff;
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-
-.generate-btn:hover {
-    background-color: #0369a1;
-}
-
-.generate-btn:active {
-    transform: scale(0.98);
-}
+```
